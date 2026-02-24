@@ -5,21 +5,21 @@
 class GhCheckproxy < Formula
   desc "GitHub Checks API proxy for fine-grained personal access tokens"
   homepage "https://github.com/bycli/gh-checkproxy"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.5/gh-checkproxy_darwin_amd64.tar.gz"
-      sha256 "089a6153e4f5252979a012c7136b9b64cc3073b4e7947f2a83b44aadce294769"
+      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.6/gh-checkproxy_darwin_amd64.tar.gz"
+      sha256 "75fcc83431c218cd1b4535242a6f7caaeae34e7ee9f5f5e2d52e70ff782b7760"
 
       define_method(:install) do
         bin.install "gh-checkproxy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.5/gh-checkproxy_darwin_arm64.tar.gz"
-      sha256 "8844f25b92b44019264c4a14808df69f456b74a8a2d6ab62cd6c19c244548f38"
+      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.6/gh-checkproxy_darwin_arm64.tar.gz"
+      sha256 "82144a48167314cfe93230ad26f77036a95c30cb0aba3719935a3ea4ddaca370"
 
       define_method(:install) do
         bin.install "gh-checkproxy"
@@ -29,15 +29,15 @@ class GhCheckproxy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.5/gh-checkproxy_linux_amd64.tar.gz"
-      sha256 "8da1decd66323b20c8e67829b16a1d71e702bc8a1c87bd0be98ecc94cb60d913"
+      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.6/gh-checkproxy_linux_amd64.tar.gz"
+      sha256 "09e45b62f584e97fd11762959508a7e41f8110da427f040ffbf27b2966bd1d54"
       define_method(:install) do
         bin.install "gh-checkproxy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.5/gh-checkproxy_linux_arm64.tar.gz"
-      sha256 "22975b3181a33cba8d2456a0db9107977d9ee0a04cabc1b1e05e88f4d4b65ea9"
+      url "https://github.com/bycli/gh-checkproxy/releases/download/v0.1.6/gh-checkproxy_linux_arm64.tar.gz"
+      sha256 "99e9b8bad8362de6224818bae34a5da3a837dc632d84d0aeccf854d6b53ad959"
       define_method(:install) do
         bin.install "gh-checkproxy"
       end
